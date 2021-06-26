@@ -1,0 +1,19 @@
+$dark: #262725;
+$camo: #1E140E;
+$white: #fafffe;
+$yellow: #ffc600;
+$green: #555f02;
+
+
+
+@mixin center() {
+  display: flex;
+}
+
+@mixin header($headerUrl) {
+  background-image: url($headerUrl);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+}
+

@@ -1,0 +1,223 @@
+section:nth-child(odd) {
+  background-color: $camo;
+}
+
+section:nth-child(even) {
+  background-color: $dark;
+}
+
+
+// header strats here
+header {
+  @include header("scss/assets/home-image-1.jpg");
+}
+
+.nav-flex {
+  @include center();
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo a {
+  color: $yellow;
+  font-size: 4.1rem;
+}
+
+.nav-flex ul {
+  @include center();
+    li {
+      margin: auto 30px auto 0;
+        a {
+          color: $white;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          line-height: 29px;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $yellow;
+          }
+        }
+    }
+}
+
+.nev-flex a:nth-child(4) {
+  margin-right: 0;
+}
+
+h1 {
+  color: $yellow;
+  font-size: 11rem;
+}
+
+.header-flex ul {
+  @include center();
+  flex-wrap: nowrap;
+    .header-image {
+      width: 40%;
+      position: relative;
+      top: 100px;
+        img {
+          width: 100%;
+        }
+    }
+}
+
+.header-text {
+  padding: 20px 50px;
+  width: 60%;
+  position: relative;
+  top: 120px;
+}
+
+.header-flex p {
+  color: white;
+  font-size: 2rem;
+}
+
+
+// new adventeure stars here
+#new {
+  padding: 150px 0 100px 0;
+}
+
+.new-flex {
+  @include center();
+    img {
+      width: 27%;
+      box-shadow: -2rem 2rem $green;
+    }
+}
+
+.new-text {
+  width: 65%;
+  margin-right: auto;
+    p {
+      margin-bottom: 2%;
+    }
+}
+
+
+// pics starts here
+.pic-flex {
+  @include center();
+  padding: 30px 0;
+    li {
+      width: calc(100% - 6%) / 3;
+      margin-right: 3%;
+      padding: 50px 0;
+        img {
+          width: 100%;
+        }
+    }
+}
+
+.pic-flex li:nth-child(3) {
+  margin-right: 0;
+}
+
+
+// details starts here
+.detail-flex {
+  @include center();
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+    li {
+      width: 45%;
+      margin-right: 5%;
+      padding-top: 50px;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+    }
+}
+
+.detail-flex li h2::before {
+  content: '\f007';
+  font-weight: 900;
+}
+
+
+// prigrams starts here
+
+.program-flex {
+  display: flex;
+  flex-direction: column;
+    li {
+      display: flex;
+      direction: row;
+      
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
+    }
+}
+
+.program-flex p {
+  margin-bottom: 2%;
+}
+
+.contents1  img {
+  width: 285%;
+  transform: translate(-30%, -14%);
+  box-shadow: 10px 10px $yellow;
+}
+
+.contents1 h2, .contents2 h2 {
+  padding-top: 40px;
+}
+
+.contents2  {
+  img {
+      width: 328%;
+      transform: translate(30%, 10%);
+      box-shadow: -10px 10px $yellow;
+    }
+}
+
+.contents2 h2, .contents2 button[type="submit"] {
+  text-align: right;
+}
+
+
+
+
+
+// free trail starts here
+#free {
+  text-align: center;
+    img {
+      width: 100%;
+    }
+}
+
+.free-text {
+  padding: 100px 0;
+    p {
+      display: flex;
+      text-align: left;
+      margin: 0 auto 1% auto;
+      width: 94%;
+    }
+}
+
+
+// footer starts here
+footer {
+  background-color: $dark;
+  text-align: center;
+    p {
+      color: $white;
+      font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+

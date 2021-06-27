@@ -1,16 +1,21 @@
-
-header {
+// contact-header starts here
+.contact-header {
   @include header("scss/assets/contact-image-1.jpg");
   height: 50vh;
+    h2 {
+      font-size: 6.5rem;
+      padding: 150px 0;;
+    }
 }
 
+
+// contact-main starts here
 main {
   background-color: $camo;
 }
 
 .main-flex {
   @include center();
-  justify-content: space-between;
   height: 46vh;
 }
 
@@ -19,9 +24,10 @@ fieldset {
   @include center();
   flex-direction: column;
   border: 1px solid $dark;
-  padding: 30px 40px;
-  box-shadow: 10px 10px $yellow;
-  width: 75%;
+  padding: 80px 40px 20px 40px;
+  margin-right: 50px;
+  box-shadow: 15px 15px $yellow;
+  width: 110%;
   position: relative;
   top: -100px;
   left: -8%;
@@ -30,12 +36,18 @@ fieldset {
 .form-flex {
   @include center();
   overflow: hidden;
+  justify-content: space-between;
 }
 
 input {
   background-color: $dark;
   border: none;
   border-bottom: 1px solid $yellow;
+  padding: 20px;
+  width: 45%;
+  color: $white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 textarea {
@@ -43,11 +55,61 @@ textarea {
   height: 150px;
   background-color: $dark;
   border: 1px solid $yellow;
+  color: $white;
+  color: $white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 20px;
+  resize: none;
 }
 
+
+// aside starts here
 aside {
-
+  padding-top: 50px;
+  width: 27%;
 }
+
+.sns-flex {
+  display: flex;
+    a {
+      color: $yellow;
+      font-size: 2rem;
+      margin-right: 20px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+}
+
+.info-flex li {
+  color: $white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+    a {
+      color: $white;
+      font-family: 'Lato', sans-serif;
+    }
+}
+
+.info-mail {
+  margin: 20px 0 25px 0;
+}
+
+.info {
+  margin-bottom: 5px;
+}
+
+
+// contact-footer starts here
+.contact-footer {
+  overflow: hidden;
+  height: 4vh;
+}
+
 
 
 

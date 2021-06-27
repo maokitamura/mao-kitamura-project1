@@ -1,3 +1,76 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, button, input, label, ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, .header-logo, button {
+  font-family: 'Dokdo', cursive;
+}
+
+h2 {
+  @include h2();
+  color: $yellow;
+}
+
+h3 {
+  @include h3();
+  color: $yellow;
+}
+
+button {
+  background-color: $green;
+  border: 1px solid $green;
+  color: $white;
+  padding: 4px 5px;
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: normal;
+  color: $white;
+}
+
+nav {
+  line-height: 29px;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0;
+  margin: 0;
+} 
+
+
+// home background 
 section:nth-child(odd) {
   background-color: $camo;
 }
@@ -7,7 +80,7 @@ section:nth-child(even) {
 }
 
 
-// header strats here
+// header starts here
 header {
   @include header("scss/assets/home-image-1.jpg");
 }
@@ -26,7 +99,7 @@ header {
 .nav-flex ul {
   @include center();
     li {
-      margin: auto 30px auto 0;
+      margin: auto 0 auto 30px;
         a {
           color: $white;
           font-size: 2rem;
@@ -64,16 +137,16 @@ h1 {
     }
 }
 
+.header-flex p {
+  color: white;
+  font-size: 3rem;
+}
+
 .header-text {
   padding: 20px 50px;
   width: 60%;
   position: relative;
   top: 120px;
-}
-
-.header-flex p {
-  color: white;
-  font-size: 2rem;
 }
 
 
@@ -128,6 +201,7 @@ h1 {
       width: 45%;
       margin-right: 5%;
       padding-top: 50px;
+      position: relative;
 
         &:nth-child(2n) {
           margin-right: 0;
@@ -135,14 +209,24 @@ h1 {
     }
 }
 
-.detail-flex li h2::before {
-  content: '\f007';
-  font-weight: 900;
+.detail1::before {
+  @include icons("\f015");
+}
+
+.detail2::before {
+  @include icons("\f0c0");
+}
+
+.detail3::before {
+  @include icons("\f15b");
+}
+
+.detail4::before {
+  @include icons("\f095");
 }
 
 
-// prigrams starts here
-
+// programs starts here
 .program-flex {
   display: flex;
   flex-direction: column;
@@ -156,34 +240,34 @@ h1 {
     }
 }
 
-.program-flex p {
-  margin-bottom: 2%;
-}
-
 .contents1  img {
   width: 285%;
   transform: translate(-30%, -14%);
   box-shadow: 10px 10px $yellow;
 }
 
+.contents2 img {
+  width: 328%;
+  transform: translate(30%, 10%);
+  box-shadow: -10px 10px $yellow;
+}
+
+.program-flex p {
+  margin-bottom: 2%;
+}
+
 .contents1 h2, .contents2 h2 {
   padding-top: 40px;
 }
 
-.contents2  {
-  img {
-      width: 328%;
-      transform: translate(30%, 10%);
-      box-shadow: -10px 10px $yellow;
-    }
-}
-
-.contents2 h2, .contents2 button[type="submit"] {
+.contents2 h2 {
   text-align: right;
 }
 
-
-
+.contents2 button[type="submit"] {
+  display: block;
+  margin-left: auto;
+}
 
 
 // free trail starts here

@@ -4,7 +4,21 @@ $white: #fafffe;
 $yellow: #ffc600;
 $green: #555f02;
 
+@mixin h2 (){
+  font-family: 'Dokdo', cursive;
+  font-size: 10.5rem;
+  font-weight: normal;
+  line-height: 7rem;
+  letter-spacing: 1.9rem;
+}
 
+@mixin h3 (){
+  font-family: 'Dokdo', cursive;
+  font-size: 4.5rem;
+  font-weight: normal;
+  line-height: 5.8rem;
+  letter-spacing: 0.49rem;
+}
 
 @mixin center() {
   display: flex;
@@ -14,6 +28,18 @@ $green: #555f02;
   background-image: url($headerUrl);
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
+@mixin icons($number) {
+  content: $number;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  background-color: $green;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: $white;
+  padding: 14px 15px;
+  position: absolute;
+  left: -79px;
+}

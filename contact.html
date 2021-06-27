@@ -10,23 +10,26 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+
   <!-- header starts here -->
-  <header>
-    <nav>
-      <div class="wrapper">
+  <div class="contact-header">
+    <div class="wrapper">
+      <nav>
         <div class="nav-flex">
-          <div class="header-logo"><a href="#">Mindn'soul</a></div>
+          <div class="header-logo">
+            <a href="#">Mindn'soul</a>
+          </div>
           <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#blog">blog</a></li>
-            <li><a href="#contact">cantact</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <h2>Get in Touch</h2>
-  </header>
+      </nav>
+      <h2>Get in Touch</h2>
+    </div>
+  </div>
 
   <!-- form starts here -->
   <main>
@@ -40,26 +43,26 @@
             <label class="sr-only" for="userEmail"></label>
             <input type="email" placeholder="Email address">
           </div>
-          <textarea name="userEmail" id="userEmail" cols="30" rows="10"></textarea>
+          <textarea name="userEmail" id="userEmail" cols="30" rows="10"placeholder="Message"></textarea>
           <button type="submit">Submit</button>
         </fieldset>  
         
         <!-- aside starts here -->
         <aside>
           <ul class="sns-flex">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
           
-          <ul clas="info-flex">
-            <li><a href="mailto:info@email.com">info@email.com</a></li>
-            <li><a href="tel:123-456-7890">123-456-7890</a></li>
-            <li>123 Queen Street West</li>
-            <li>Unit10</li>
-            <li>Toronto, Ontario</li>
-            <li>M5V2D5</li>
+          <ul class="info-flex">
+            <li class="info-mail"><a href="mailto:info@email.com">info@email.com</a></li>
+            <li class="info"><a href="tel:123-456-7890">123-456-7890</a></li>
+            <li class="info">123 Queen Street West</li>
+            <li class="info">Unit10</li>
+            <li class="info">Toronto, Ontario</li>
+            <li class="info">M5V2D5</li>
           </ul>
         </aside>
       </div>
@@ -67,7 +70,7 @@
   </main>
     
   <!-- footer strats here -->
-  <footer>
+  <footer class="contact-footer">
     <div class="wrapper">
       <p>Copyright 2019 HackerYou</p>
     </div>

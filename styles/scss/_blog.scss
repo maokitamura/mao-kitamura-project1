@@ -1,8 +1,89 @@
-.main-flex {
+// blog header starts here
+.blog-header {
+    @include header("scss/assets/blog-image-1.jpg");
+    height: 70vh;
+      h2 {
+        padding-top: 20%;
+      }
+  }
+
+.blogmain-flex {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $camo;
+}
+
+
+// blog main starts here
+article {
+box-shadow: 10px 10px $green;
+position: relative;
+  h3 {
+    padding-top: 500px;
+  }
+    p {
+      margin-bottom: 30px;
+    }
 }
 
 article img {
   width: 100%;
-  box-shadow: 10px 10px $green;
+  box-shadow: 15px 15px $green;
+  position: absolute;
+  top: -150px;
+}
+
+.blog-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: $camo;
+  width: 60%;
+}
+
+
+// comment starts here
+.comment {
+  padding: 50px 0;
+}
+
+.comment-flex li {
+  display: flex;
+  margin-bottom: 40px;
+    img {
+      width: 50%;
+      height: 120px;
+      margin-right: 60px;
+    }
+}
+
+// form
+.post-comment {
+  margin-bottom: 100px;
+    textarea, button{
+      width: 100%;
+    }
+}
+
+.post-comment input, .post-comment textarea {
+  background-color: $camo;
+}
+
+
+
+// blog aside starts here
+.blog-aside {
+  width: 25%;
+    p {
+      font-size: 0.5rem;
+    }
+}
+
+.blog-aside img {
+  box-shadow: -10px 10px $green;
+}
+
+.aside-text {
+  background-color: $green;
+  box-shadow: -10px 10px $green;
 }

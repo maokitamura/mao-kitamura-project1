@@ -1,73 +1,8 @@
 @import "setup";
 @import 'variable';
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-h1, h2, h3, p, button, input, label, ul {
-  padding: 0;
-  margin: 0;
-}
-
-h1, h2, h3, h4, .header-logo, button {
-  font-family: 'Dokdo', cursive;
-}
-
-h2 {
-  font-size: 4.5rem;
-  line-height: 58px;
-  letter-spacing: 4.9px;
-  color: $yellow;
-}
-
-button {
-  background-color: $green;
-  border: 1px solid $green;
-  color: $white;
-  padding: 4px 5px;
-  font-size: 2rem;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  line-height: 32px;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  color: $white;
-}
-
-nav {
-  line-height: 29px;
-  letter-spacing: 1px;
-  font-size: 2rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  width: 90%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-section {
-  padding: 0;
-  margin: 0;
-} 
-
 @import 'home';
 @import 'blog';
 @import 'contact';
+@import 'mediaHome';
+@import 'mediaContact';
+@import 'mediaBlog';

@@ -28,6 +28,7 @@ $green: #555f02;
   background-image: url($headerUrl);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 30px;
 }
 
@@ -37,9 +38,9 @@ $green: #555f02;
   font-family: "Font Awesome 5 Free";
   background-color: $green;
   border-radius: 50%;
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: $white;
-  padding: 14px 15px;
+  padding: 11px 10px;
   position: absolute;
-  left: -79px;
+  left: -70px;
 }

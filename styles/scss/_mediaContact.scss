@@ -1,0 +1,95 @@
+@media (width: 700px) {
+  .contact-header {
+    height: 30vh;
+      h2 {
+        padding: 60px 0;
+        font-size: 5.5rem;
+      }
+  }
+
+  .main-flex {
+    height: auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  fieldset {
+    padding-top: 50px;
+    width: 97%;
+    top: 0;
+    left: 0;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+      width: 100%;
+  }
+
+  .info-mail {
+    margin-top: 0;
+  }
+
+  .contact-footer {
+    height: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact-header {
+    height: 30vh;
+      h2 {
+        padding: 60px 0;
+        font-size: 5.5rem;
+      }
+  }
+
+  .main-flex {
+    height: auto;
+    flex-direction: column;
+    height: auto;
+  }
+
+  fieldset {
+    padding-top: 50px;
+    width: 97%;
+    top: 0;
+    left: 0;
+      input {
+        width: 100%;
+      }
+  }
+
+  .form-flex {
+    flex-direction: column;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 100%;
+  }
+
+  .info-mail {
+    margin: 0 0 3px 0;
+  }
+
+  .contact-footer {
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-header h2 {
+    font-size: 4.5rem;
+  }
+}
+
+  @media (max-width: 450px) {
+    .contact-header h2 {
+      font-size: 3.5rem;
+      letter-spacing: 0.9rem;
+    }
+}

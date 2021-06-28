@@ -125,6 +125,9 @@ header {
   margin-right: 0;
 }
 
+.sub-menu {
+  display: none;
+}
 
 .header-flex ul {
   @include center();
@@ -199,9 +202,9 @@ header {
   @include center();
   flex-wrap: wrap;
   padding-bottom: 120px;
+  justify-content: space-around;
     li {
       width: 40%;
-      margin-right: 10%;
       padding-top: 50px;
       position: relative;
 

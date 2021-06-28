@@ -279,7 +279,7 @@ button {
   font-size: 2rem;
 }
 
-p {
+p, li {
   font-family: "Lato", sans-serif;
   line-height: 32px;
   letter-spacing: 2px;
@@ -686,21 +686,33 @@ article img {
 }
 
 .blog-aside {
-  width: 25%;
-}
-.blog-aside p {
-  font-size: 0.5rem;
+  width: 30%;
 }
 
 .blog-aside img {
   -webkit-box-shadow: -10px 10px #555f02;
           box-shadow: -10px 10px #555f02;
+  display: block;
+  width: 100%;
 }
 
 .aside-text {
   background-color: #555f02;
-  -webkit-box-shadow: -10px 10px #555f02;
-          box-shadow: -10px 10px #555f02;
+  border: 10px solid #555f02;
+  padding: 30px;
+}
+.aside-text h4 {
+  font-weight: normal;
+  line-height: 58px;
+  letter-spacing: 4.3px;
+  color: #fafffe;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.aside-text ul {
+  list-style: disc;
+  color: #ffc600;
 }
 
 .contact-header {

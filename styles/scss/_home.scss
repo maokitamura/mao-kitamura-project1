@@ -15,6 +15,12 @@ h1, h2, h3, h4, .header-logo, button {
   font-family: 'Dokdo', cursive;
 }
 
+h1 {
+  color: $yellow;
+  font-size: 11rem;
+  margin-top: 25px
+}
+
 h2 {
   @include h2();
   color: $yellow;
@@ -33,7 +39,7 @@ button {
   font-size: 2rem;
 }
 
-p {
+p, li {
   font-family: 'Lato', sans-serif;
   line-height: 32px;
   letter-spacing: 2px;
@@ -119,10 +125,6 @@ header {
   margin-right: 0;
 }
 
-h1 {
-  color: $yellow;
-  font-size: 11rem;
-}
 
 .header-flex ul {
   @include center();
@@ -140,6 +142,7 @@ h1 {
 .header-flex p {
   color: white;
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .header-text {
@@ -194,12 +197,11 @@ h1 {
 // details starts here
 .detail-flex {
   @include center();
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 120px;
     li {
-      width: 45%;
-      margin-right: 5%;
+      width: 40%;
+      margin-right: 10%;
       padding-top: 50px;
       position: relative;
 
@@ -256,11 +258,11 @@ h1 {
   margin-bottom: 2%;
 }
 
-.contents1 h2, .contents2 h2 {
+.contents1 h3, .contents2 h3 {
   padding-top: 40px;
 }
 
-.contents2 h2 {
+.contents2 h3 {
   text-align: right;
 }
 

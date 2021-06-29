@@ -17,7 +17,7 @@
 
 // blog main starts here
 article {
-box-shadow: 10px 10px $green;
+// box-shadow: 10px 10px $green;
 position: relative;
   h3 {
     padding-top: 500px;
@@ -35,6 +35,12 @@ article img {
   box-shadow: 20px 20px $green;
   position: absolute;
   top: -150px;
+}
+
+.article-text {
+  box-shadow: 10px 10px $green;
+  width: 101.3%;
+  padding-bottom: 30px;
 }
 
 .blog-flex {

@@ -16,9 +16,14 @@
     width: 100%;
   }
 
+  article img {
+    top: -66px;
+  }
+
   .blog-aside {
     display: flex;
     width: 100%;
+    position: initial;
       img {
         box-shadow: none;
       }
@@ -35,9 +40,9 @@
   }
 
   article img {
-    width: 83%;
-    top: -120px;
-    right: 64px;
+    width: 71%;
+    top: 0px;
+    right: 113px;
   }
 
   .comment-flex p {
@@ -70,6 +75,11 @@
         margin-bottom: 30px;
       }
   }
+
+  .aside-text {
+    margin-left: -20px;
+    margin-left: 15px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -79,7 +89,7 @@
   }
 
   article img {
-    right: 35px;
+    display: none;
   }
 
   .comment-flex li  {

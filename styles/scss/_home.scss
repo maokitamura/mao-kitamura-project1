@@ -35,8 +35,15 @@ button {
   background-color: $green;
   border: 1px solid $green;
   color: $white;
-  padding: 4px 5px;
-  font-size: 2rem;
+  padding: 4px 8px;
+  font-size: 3rem;
+  letter-spacing: 1px;
+    
+    &:hover,
+    &:focus {
+      color: $green;
+      background-color: $white;
+    }
 }
 
 p, li {
@@ -144,8 +151,9 @@ header {
 
 .header-flex p {
   color: white;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  letter-spacing: 3.5px;
 }
 
 .header-text {
@@ -165,7 +173,7 @@ header {
   @include center();
     img {
       width: 27%;
-      box-shadow: -2rem 2rem $green;
+      box-shadow: -15px 15px $green;
     }
 }
 
@@ -202,9 +210,9 @@ header {
   @include center();
   flex-wrap: wrap;
   padding-bottom: 120px;
-  justify-content: space-around;
+  justify-content: space-between;
     li {
-      width: 40%;
+      width: 47%;
       padding-top: 50px;
       position: relative;
 
@@ -224,10 +232,12 @@ header {
 
 .detail3::before {
   @include icons("\f15b");
+  padding: 11px 14px;
 }
 
 .detail4::before {
   @include icons("\f095");
+  padding: 11px;
 }
 
 
@@ -248,17 +258,17 @@ header {
 .contents1  img {
   width: 285%;
   transform: translate(-30%, -14%);
-  box-shadow: 10px 10px $yellow;
+  box-shadow: 15px 15px $yellow;
 }
 
 .contents2 img {
   width: 328%;
   transform: translate(30%, 10%);
-  box-shadow: -10px 10px $yellow;
+  box-shadow: -15px 15px $yellow;
 }
 
 .program-flex p {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .contents1 h3, .contents2 h3 {

@@ -24,12 +24,15 @@ position: relative;
   }
     p {
       margin-bottom: 30px;
+        &:first-of-type {
+          font-style: italic;
+        }
     }
 }
 
 article img {
   width: 100%;
-  box-shadow: 15px 15px $green;
+  box-shadow: 20px 20px $green;
   position: absolute;
   top: -150px;
 }
@@ -39,7 +42,12 @@ article img {
   flex-direction: column;
   background-color: $camo;
   width: 60%;
+    span {
+      font-weight: bold;
+    }
 }
+
+
 
 
 // comment starts here
@@ -57,6 +65,11 @@ article img {
     }
 }
 
+.comment-flex span {
+  color: $yellow;
+}
+
+
 // form
 .post-comment {
   margin-bottom: 100px;
@@ -73,19 +86,24 @@ article img {
 
 // blog aside starts here
 .blog-aside {
-  width: 30%;
+  width: 27%;
+  position: absolute;
+  right: -3%;
+  top: 650px;
+
 }
 
 .blog-aside img {
-  box-shadow: -10px 10px $green;
+  box-shadow: -20px 20px $green;
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 .aside-text {
   background-color: $green;
   padding: 30px;
-  margin-left: -1rem;
+  margin-left: -20px;
+  width: 94%;
 
     h4 {
       font-weight: normal;
@@ -97,8 +115,12 @@ article img {
     }
 }
 
-.aside-yellow {
+.aside-yellow li {
   list-style-position: inside;
   list-style: disc;
+  list-style-position: inside;
   color: $yellow;
+    span {
+      color: $white;
+    }
 }

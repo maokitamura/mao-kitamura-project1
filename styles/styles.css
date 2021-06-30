@@ -1055,16 +1055,17 @@ aside {
 
   .header-text {
     padding: 0;
-    -webkit-transform: translate(-56%, -146%);
-            transform: translate(-56%, -146%);
+    width: 100%;
+    -webkit-transform: translate(-30%, 0%);
+            transform: translate(-30%, 0%);
+  }
+  .header-text h1 {
+    font-size: 6.5rem;
+    margin-top: 3%;
   }
 
   .header-flex p {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .header-image img {
@@ -1087,6 +1088,15 @@ aside {
 
   p, li {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 660px) and (max-width: 400px) {
+  .header-text h1 {
+    font-size: 4.5rem;
+  }
+
+  .header-flex p {
+    font-size: 2rem;
   }
 }
 @media (width: 700px) {

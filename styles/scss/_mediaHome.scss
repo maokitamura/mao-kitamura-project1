@@ -109,17 +109,49 @@
   .sub-menu {
     display: block;
     text-align: right;
-      a {
+      label {
         font-size: 3rem;
         color: $yellow;
-          
+
         &:hover,
         &:focus {
           color: $white;
-
         }
       }
   }
+
+
+  .sliding-menu  {
+    background-color: $white;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: all .3s;
+      li {
+        padding: 10px 20px;
+        text-align: center;
+          a {
+            color: $yellow;
+            display: inline-block;
+            width: 100%;
+            padding: 20px;
+
+            &:hover, 
+            &:focus {
+              background-color: $green;
+              transition: all .3s;
+            }
+          }
+      }
+  }
+
+  input[type="checkbox"]:checked + .sliding-menu {
+    transform: translateX(0);
+  }
+
 
   .header-text {
     padding: 0;

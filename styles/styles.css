@@ -1012,12 +1012,45 @@ aside {
     display: block;
     text-align: right;
   }
-  .sub-menu a {
+  .sub-menu label {
     font-size: 3rem;
     color: #ffc600;
   }
-  .sub-menu a:hover, .sub-menu a:focus {
+  .sub-menu label:hover, .sub-menu label:focus {
     color: #fafffe;
+  }
+
+  .sliding-menu {
+    background-color: #fafffe;
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 2;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .sliding-menu li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .sliding-menu li a {
+    color: #ffc600;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+  }
+  .sliding-menu li a:hover, .sliding-menu li a:focus {
+    background-color: #555f02;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  input[type=checkbox]:checked + .sliding-menu {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   .header-text {

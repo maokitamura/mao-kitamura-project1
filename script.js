@@ -5,7 +5,7 @@ const modalClose = document.querySelector('.fa-times');
 const modalOutside = document.querySelector('.login-modal-wrapper');
 
 
-// when its close taking off is-active class. just a function. have to call later.
+// When its close, remove is-active class. just a function. have to call later.
 const closeModal = () => {
   modalOutside.classList.remove("is-active");
   modal.classList.remove("is-active");
@@ -17,9 +17,6 @@ loginEl.addEventListener("click", () => {
   modalOutside.classList.add("is-active");
   modal.classList.add("is-active");
 });
-
-
-const formEl = document.querySelector('#login-form');
 
 
 // when we click close, modal closes

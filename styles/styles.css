@@ -969,6 +969,10 @@ aside {
     overflow-x: hidden;
   }
 
+  .modal {
+    left: 24%;
+  }
+
   h1 {
     font-size: 8rem;
   }
@@ -1083,6 +1087,10 @@ aside {
     display: none;
   }
 
+  .modal {
+    left: 18%;
+  }
+
   .sub-menu {
     display: block;
     text-align: right;
@@ -1157,6 +1165,10 @@ aside {
   }
 }
 @media (max-width: 660px) and (max-width: 500) {
+  .modal {
+    left: 0%;
+  }
+
   h3 {
     font-size: 3rem;
   }
@@ -1166,6 +1178,19 @@ aside {
   }
 }
 @media (max-width: 660px) and (max-width: 400px) {
+  .modal {
+    left: 14%;
+    width: 300px;
+  }
+  .modal #signup-form input,
+.modal #login-form input {
+    width: 100%;
+  }
+
+  #submit-btn {
+    width: 200px;
+  }
+
   .header-text h1 {
     font-size: 4.5rem;
   }
